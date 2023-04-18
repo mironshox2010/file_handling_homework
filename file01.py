@@ -6,5 +6,11 @@ def main(data:str):
     Returns:
         list: return answer
     """
-
-# Read data from file
+    lst = data.split(',')
+    ans = []
+    for i in lst:
+        ans.append(int(i))
+    return ans    
+f = open('txt_file/data01.txt', encoding='UTF-8')
+data = f.read()
+print(main(data))
