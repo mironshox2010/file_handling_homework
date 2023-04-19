@@ -6,12 +6,11 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    ans = []
-    for num in data:
-        if not num.isdigit():
-            ans.append(num)
-    return ans    
-# Read data from file
-f = open('txt_file/data04.txt', encoding='UTF-8')
-data = f.read()
+    k = []
+    for mir in data:
+        if not mir.isdigit():
+            k.append(mir)
+    return k
+
+data = open('txt_file/data04.txt').read()
 print(main(data))
